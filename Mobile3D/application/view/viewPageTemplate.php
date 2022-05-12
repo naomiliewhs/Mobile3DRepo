@@ -76,7 +76,7 @@
                 <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
                 <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
-                <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+                <a href="https://github.com/naomiliewhs/Mobile3DRepo"><i class="fab fa-github-square fa-2x"></i></a>
             </div>
         </div>
     </nav>

@@ -42,28 +42,18 @@ class Model {
 	}
 
 	public function dbGetMainPageData(){
-		//echo("Na is a butt");
 		$data = $this->dbGetData("*", "Brand_Data");
 		return $data;
 	}
 
-	private function dbGetData(string $query, string $tgt){
+	private function dbGetData($query, $tgt){
 		try{
-			// Prepare a statement to get all records from the Model_3D table
 			$sql = 'SELECT '.$query.' FROM '.$tgt;
-			// Use PDO query() to query the database with the prepared SQL statement
 			$stmt = $this->dbhandle->query($sql);
-			// Set up an array to return the results to the view
 			$result = null;
-			// Set up a variable to index each row of the array
 			$i=-0;
-			// Use PDO fetch() to retrieve the results from the database using a while loop
-			// Use a while loop to loop through the rows	
-			while ($data = $stmt->fetch()) {
-				// Don't worry about this, it's just a simple test to check we can output a value from the database in a while loop
-				// echo '</br>' . $data['x3dModelTitle'];
-				// Write the database conetnts to the results array for sending back to the view
-				if ($query === "*"){
+			while ($data = $stmt->fetch()) 
+			{if ($query === "*"){
 					if ($tgt === "Brand_Data"){
 						$result[$i]['brand'] = $data['brand'];
 						$result[$i]['title'] = $data['title'];
@@ -81,7 +71,6 @@ class Model {
 					$result[$i] = $data;
 				}
 				
-				//increment the row index
 				$i++;
 			}
 		}

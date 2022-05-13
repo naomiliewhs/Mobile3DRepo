@@ -1,6 +1,6 @@
 <?php
-$directory = '../assets/images/gallery_images';
-$imagePath = '../application/assets/images/gallery_images';
+$directory = 'assets/images/gallery_images';
+$imagePath = 'application/assets/images/gallery_images';
 // Only load files with the following extensions
 $allowed_extensions = array('jpg','jpeg','gif','png');
 // An array used to separate the extension from each file

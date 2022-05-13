@@ -2,8 +2,6 @@
 // JavaScript Document
 function populateHomePage(jsonObj){
 	//AJAX service request to get the main text data from the json data store
-	   console.log("Jeeepers");
-	   console.log(jsonObj);
 	   //Get the home page main text data
 	   $('#title_home').html('<h2>' + jsonObj[0].title + '<h2>');
 	   $('#subTitle_home').html('<h3>' + jsonObj[0].subtitle + '</h3>');
@@ -74,8 +72,7 @@ var htmlCode = "";
 var response;
 
 function requestEmbed(tgt){
-	var send = "../application/controller/postHandler.php";
-	console.log(send);
+	var send = "application/controller/postHandler.php";
 	// Open the connection to the web server
 	xmlHttp.open("POST", send, true);
 	// Tell the server that the client has no outgoing message, i.e. we are sending nothing to the server
@@ -90,12 +87,12 @@ function requestEmbed(tgt){
 			document.getElementById('embed-container').innerHTML = htmlCode;
 			switch(tgt){
 				case "home":
-					jsonObj = eval(response_array[1].slice(5));
+					jsonObj = eval("["+response_array[1].split('Array[')[1]);
 					populateHomePage(jsonObj);
 					break;
 				case "models":
-					jsonObj = eval(response_array[1].slice(5));
-					const sHtml = "<script type='text/javascript' src='../application/js/x3dom-1.7.2/x3dom.js'></script>";
+					jsonObj = eval("["+response_array[1].split('Array[')[1]);
+					const sHtml = "<script type='text/javascript' src='application/js/x3dom-1.7.2/x3dom.js'></script>";
 					const frag = document.createRange().createContextualFragment(sHtml)
 					document.body.appendChild( frag );
 					break;

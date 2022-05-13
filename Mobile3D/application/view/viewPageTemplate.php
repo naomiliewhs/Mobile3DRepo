@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     
-    <link rel="stylesheet" href="../application/css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="application/css/bootstrap.css" crossorigin="anonymous">
 
     
-    <link rel='stylesheet' type='text/css' href='../application/css/x3dom.css'>
+    <link rel='stylesheet' type='text/css' href='application/css/x3dom.css'>
 
     
-    <link rel="stylesheet" href="../application/css/custom.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="application/css/custom.css" crossorigin="anonymous">
 
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     
-    <link rel="stylesheet" type="text/css" href="../application/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="application/css/jquery.fancybox.min.css">
 
     <title>Coca Cola</title>
 
@@ -110,24 +110,14 @@
 
     
     
-    <script src="../application/js/jquery-3.2.1.js" crossorigin="anonymous"></script>
-    <script src="../application/js/popper.min.js" crossorigin="anonymous"></script>
-    <script src="../application/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="../application/js/fontawesome-all.min.js"></script>
-    
-    <script src="../application/js/custom.js" crossorigin="anonymous"></script>
-    
-    <script src="../application/js/swap_restyle.js"></script>
-    
-    <script type='text/javascript' src='../application/js/x3dom-1.7.2/x3dom.js'></script>
-    
-    
-    
-    
-    
-    <script src="../application/js/modelInteractions.js"></script>
-    
-    <script src="../application/js/jquery.fancybox.min.js"></script>
+    <script src="application/js/jquery-3.2.1.js" crossorigin="anonymous"></script>
+    <script src="application/js/popper.min.js" crossorigin="anonymous"></script>
+    <script src="application/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="application/js/fontawesome-all.min.js"></script>
+    <script src="application/js/custom.js" crossorigin="anonymous"></script>
+    <script src="application/js/swap_restyle.js"></script>
+    <script src="application/js/modelInteractions.js"></script>
+    <script src="application/js/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

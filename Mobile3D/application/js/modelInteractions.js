@@ -1,7 +1,7 @@
 //adapted from example code 'benskitchen.com'
 function refreshX3D(){
 
-	const sHtml = "<script type='text/javascript' src='../application/js/x3dom-1.7.2/x3dom.js'></script>";
+	const sHtml = "<script type='text/javascript' src='application/js/x3dom-1.7.2/x3dom.js'></script>";
 	const frag = document.createRange().createContextualFragment(sHtml)
 	document.body.appendChild( frag );
 }
@@ -10,6 +10,7 @@ function canScene(){
     document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
 	document.getElementById('bottle-select').setAttribute('style','display:none');
 	document.getElementById('can-select').setAttribute('style','');
+	retexture(0, 'f.apple');
 }
 
 function bottleScene(){
@@ -17,6 +18,7 @@ function bottleScene(){
     document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
 	document.getElementById('bottle-select').setAttribute('style','');
 	document.getElementById('can-select').setAttribute('style','display:none');
+	retexture(8, 's.bitterlemon')
 }
 
 function retexture(ind, tgt){

@@ -7,8 +7,10 @@ class Load {
 		}
 		$output = include $file_name . '.php';
 		//echo $output;
-		echo $data;
-		echo json_encode($data);
+		if ($data != null){
+			echo $data;
+			echo json_encode($data);
+		}
 	}
 }
 ?>

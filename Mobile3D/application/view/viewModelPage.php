@@ -21,8 +21,8 @@
                                 </div>
                             <?php } ?>
 
-                            <button type="button" class="btn btn-success btn-responsive" onMouseUp="canScene(); cokeDescription();">Cans</button>
-                            <button type="button" class="btn btn-success btn-responsive" onMouseUp="bottleScene(); spriteDescription();">Bottles</button>
+                            <button type="button" class="btn btn-success btn-responsive" onMouseUp="canScene();">Cans</button>
+                            <button type="button" class="btn btn-success btn-responsive" onMouseUp="bottleScene();">Bottles</button>
 
                             <div id="can-select" class="row">
                                 <li id="dropSelect-can-fanta" style='list-style-type:none'>
@@ -73,10 +73,10 @@
                                     <scene>
                                         <Switch whichChoice="0" id='SceneSwitch'>
                                             <transform>
-                                                <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../application/assets/x3d/can.x3d"> </inline>
+                                                <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="application/assets/x3d/can.x3d"> </inline>
                                             </transform>
                                             <transform>
-                                                <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../application/assets/x3d/bottle.x3d"> </inline>
+                                                <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="application/assets/x3d/bottle.x3d"> </inline>
                                             </transform>
                                         </Switch>
                                     </scene>
@@ -209,8 +209,8 @@
                                 </div>
                                 <div class="gallery" id="gallery">
                                     <?php for ($i = 0; $i < count($data); $i++) { ?>
-                                        <a href='<?php echo "../application/assets/images/gallery_images/pngs/".$i."_transparent.png"?>' data-fancybox data-caption="Gallery Image"> 
-                                            <img class="card-img-top img-thumbnail" src='<?php echo "../application/assets/images/gallery_images/pngs/".$i."_transparent.png"?>'/>
+                                        <a href='<?php echo "application/assets/images/gallery_images/pngs/".$i."_transparent.png"?>' data-fancybox data-caption="Gallery Image"> 
+                                            <img class="card-img-top img-thumbnail" src='<?php echo "application/assets/images/gallery_images/pngs/".$i."_transparent.png"?>'/>
                                         </a>
                                     <?php } ?>
                                         
@@ -224,6 +224,6 @@
 
             </div>
 
-            <script type='text/javascript' src='../application/js/x3dom-1.7.2/x3dom.js'></script>
-            <script src="../application/js/modelInteractions.js"></script>
+            <script type='text/javascript' src='application/js/x3dom-1.7.2/x3dom.js'></script>
+            <script src="application/js/modelInteractions.js"></script>
             <!-- END IMPORTED BLOCK -->

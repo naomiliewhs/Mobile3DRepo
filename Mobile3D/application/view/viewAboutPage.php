@@ -13,7 +13,7 @@
         <div class="row">
             <div class="card">
                 <a class="img-narrow">
-                    <img class="card-img-top img-fluid img-thumbnail" src="../application/assets/images/coke_brand.png" alt="Coca Cola">
+                    <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/coke_brand.png" alt="Coca Cola">
                 </a>
                 <div class="card-body">
                     <h2>Coca Cola Company</h2>

@@ -6,10 +6,10 @@
 */
 
 /* Method to declare your own fonts */
-@font-face {
+/*@font-face {
     font-family: cocaColaFont;
-    src: url(../fonts/lokicola.ttf);
-}
+    src: url(fonts/lokicola.ttf);
+}*/
 
 /* Extra small devices (portrait phones, less than 576px)
    No media query since this is the default in Bootstrap
@@ -860,12 +860,6 @@ x3d {
         height: 700px;
     }
 
-}
-
-
-.control-column {
-    /* height: inherit; */
-    /* min-height: inherit; */
 }
 
 .column-element {
